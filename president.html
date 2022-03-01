@@ -2,7 +2,7 @@
 <html>
  <head>
     <title>President page</title>
-    
+
  </head>
 <body>
     <h1>President guess by Thaarani Yerramsetty</h1>
@@ -34,5 +34,32 @@
      }
         </script>
     </form>
+    <div>
+        <img src="Yellow-billed hornbill.jpg" id="bird" width="100" height="100" onclick="swapImage()">
+        <script>
+            var useImage=1;
+            function swapImage(){
+                switch(useImage){
+                    case 1:
+                    document.getElementById('bird').src="Yellow-billed hornbill.jpg";
+                    useImage=2;
+                    break;
+                    case 2:
+                    document.getElementById('bird').src="Emu.jpg";
+                    useImage=3;
+                    break;
+                    case 3:
+                    document.getElementById('bird').src="Robin.jpg";
+                    useImage=1;
+                    break;
+    
+    
+                }
+            }
+        
+        </script>
+    
+    </div>
+    
 </body>
 </html> 
